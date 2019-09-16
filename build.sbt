@@ -4,8 +4,6 @@ version := "1.0"
 
 scalaVersion := "2.11.8"
 
-scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
-
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "2.2.0" % "provided",
   "com.github.scopt" %% "scopt" % "3.6.0",

@@ -16,6 +16,11 @@ object BenchMarkJob {
   val largeNumber: Int = 1024 * 1024
 
   def main(args: Array[String]) {
+
+      run(args)
+  }
+
+    def run(args: Array[String]){
     val config = jobArgs(args).getOrElse(SparkSubmitParameters())
     val json = JsonReport("spark-benchmark")
     val sc = new SparkContext()
